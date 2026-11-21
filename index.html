@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="menu-btn" onclick="openMenu()">
+        ☰ Меню
+    </button>
+    <div id="sideMenu" class="side-menu">
+        <span class="close-btn" onclick="closeMenu()">&times;</span>
+        <a href="#" onclick="showAbout()">Про гру</a>
+        <a href="#" onclick="showHistory()">Історія змін</a>
+        <a href="#" onclick="showHeroes()">Герої</a>
+    </div>
+    <div class="container">
+        <h1>Minecraft</h1>
+        <h2>про гру</h2>
+        <p class="main-text">
+            Minecraft — це популярна комп'ютерна відеогра
+            в жанрі пісочниці з відкритим світом.
+        </p>
+        <img src="minecraft-logo.png" alt="Minecraft" class="main-image">
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">
+                &times;
+            </span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+    <div class="footer-content">
+        <h3>Автори проєкту</h3>
+
+        <p>        </p>
+
+        <p>Навчальний проєкт з HTML, CSS та JavaScript</p>
+
+        <p>© 2026 Minecraft Fan Site</p>
+    </div>
+</footer>
+</body>
+</html>
